@@ -11,11 +11,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: [
-  "http://localhost:3000",
-  "https://website-omega-orpin-77.vercel.app",
-  "https://admin-dashboard-raj82batm-rahul-diws-projects.vercel.app"
-],
+  origin: true,
   credentials: true
 }));
 

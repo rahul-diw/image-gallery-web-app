@@ -10,10 +10,16 @@ require("./config/cloudinary");
 const app = express();
 
 
-app.use(cors({
-  origin: true,
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://admin-dashboard-navy-three-15.vercel.app",
+      "https://website-omega-orpin-77.vercel.app"
+    ],
+    credentials: true
+  })
+);
 
 app.use(express.json());
 
